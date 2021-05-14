@@ -1,5 +1,7 @@
 \documentclass{article}
 
+\usepackage{amsmath}
+
 \begin{document}
 
 \section{Reparametrizing the Two Body Problem}
@@ -22,12 +24,10 @@ Anomaly $E(t)$:
     M = E - e\,\sin E
 \end{equation}
 The Eccentric Anomaly is related to the True Anomaly by:
-$$
 \begin{align}
     \tan\frac{f}{2} &= \sqrt{\frac{1+e}{1-e}} \, \tan\frac{E}{2} \\
     \tan\frac{E}{2} &= \sqrt{\frac{1-e}{1+e}} \, \tan\frac{f}{2}
 \end{align}
-$$
 
 In the above parametrization, the full set of parameters is $(v_0, K, P, e,
 \omega, t_{\mathrm{peri}})$.
