@@ -108,11 +108,13 @@ expression
 \begin{align}
     \frac{\Delta M}{2} &= \frac{\Delta E}{2} -
         e\, \sin\frac{\Delta E}{2} \, \cos\frac{\Sigma E}{2} \\
-    \frac{\Delta M}{2} &=
-        \arctan\left(\frac{\sqrt{1 - e^2}}{e\,\sin\omega}\right) -
-        \,e \,
-            \sin\left(\arctan\left(\frac{\sqrt{1 - e^2}}{e\,\sin\omega}\right)\right) \,
-            \cos\left(\arctan\left(\frac{\sqrt{1 - e^2}}{\tan\omega}\right)\right)
+    % \frac{\Delta M}{2} &=
+    %     \arctan\left(\frac{\sqrt{1 - e^2}}{e\,\sin\omega}\right) -
+    %     \,e \,
+    %         \sin\left(\arctan\left(\frac{\sqrt{1 - e^2}}{e\,\sin\omega}\right)\right) \,
+    %         \cos\left(\arctan\left(\frac{\sqrt{1 - e^2}}{\tan\omega}\right)\right)
+    &= \arctan\left( \frac{\sqrt{1 - e^2}}{e \, \sin\omega} \right) +
+        \frac{2\, e \, \sqrt{1 - e^2} \, \sin\omega}{e^2 - 2 + e^2\,\cos(2\omega)}
 \end{align}
 and the phase $M_0$ can be retrieved with
 \begin{align}
